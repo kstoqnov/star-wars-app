@@ -1,16 +1,18 @@
 import React from 'react';
+import Header from '../app_header_components/Header';
+import Main from '../app_main_components/Main';
+import Footer from '../app_footer_components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hallo Word
-        </p>
-      
-      </header>
-    </div>
+    <>
+      <Header/>
+      <Main/>     
+      <Footer/>
+   </>
   );
 }
+
+
 
 export default App;
