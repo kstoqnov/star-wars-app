@@ -7,7 +7,7 @@ cache:
 script:
   - npm test
   - npm run build
-  branches:
-  only: 
-    - master
+branches:
+  except:
+    - /^pr\..*/
    
