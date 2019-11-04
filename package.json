@@ -33,12 +33,12 @@
     "build": "react-scripts build",
     "test": "set CI=true && react-scripts test",
     "test:coverage": "set CI=true && react-scripts test --coverage",
-    "lint-staged": "lint-staged",
     "eject": "react-scripts eject"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test:coverage"
     }
   },
   "lint-staged": {
