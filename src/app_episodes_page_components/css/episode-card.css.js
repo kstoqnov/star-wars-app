@@ -38,7 +38,7 @@ export const CardMedia = styled.span`
 
   img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
