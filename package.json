@@ -33,6 +33,7 @@
     "build": "react-scripts build",
     "test": "set CI=true && react-scripts test",
     "test:coverage": "set CI=true && react-scripts test --coverage",
+    "lint-staged": "lint-staged",
     "eject": "react-scripts eject"
   },
   "husky": {
@@ -42,8 +43,9 @@
   },
   "lint-staged": {
     "src/**/*.js": [
-      "./node_modules/.bin/eslint — fix",
-      "git add"
+      "eslint --fix",
+      "git add",
+      "jest --bail --findRelatedTests"
     ]
   },
   "eslintConfig": {
