@@ -1,4 +1,4 @@
-import SFDistantGalaxy from '../../app_fonts/SFDistantGalaxy.ttf';
+import SFDistantGalaxyRegular from '../../app_fonts/SFDistantGalaxyRegular.ttf';
 
 
 import { createGlobalStyle } from 'styled-components';
@@ -7,8 +7,8 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
 
   @font-face {
-    font-family: 'SF Distant Galaxy';
-    src: url(${SFDistantGalaxy}) format('truetype');
+    font-family: 'SF Distant Galaxy Regular';
+    src: url(${SFDistantGalaxyRegular}) format('truetype');
   }
 
 
@@ -22,7 +22,8 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     margin: 0;
-    font-family: 'SF Distant Galaxy', sans-serif;
+    font-family: "Times New Roman", Times, serif;
+    
   }
 
   button {

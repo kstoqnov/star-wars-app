@@ -13,8 +13,11 @@ export const SignInContainer = styled.div`
   background: #000;
 
   & > p {
-    margin: 0.2em auto;
+    margin: 0.4em auto;
     color: ${({ theme }) => theme.headingFontColor};
+    font-size: 20px;
+    line-height: 20px;
+   
 
     & > span {
       color: ${({ theme }) => theme.credentials};

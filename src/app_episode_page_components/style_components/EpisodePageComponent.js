@@ -5,7 +5,8 @@ import CustomButtonComponent from '../../app_custom_components/style_components/
 import { CharWrapper, CharContainer } from '../../app_characters_page_components/css/characters.css';
 import { EpisodeContainer, ImgCard, Info, TitleContainer } from '../css/episode.css';
 import { numToRomanNum } from '../../app_utils/js/numToRomanNum';
-
+import { MISSING_IMG } from '../../app_utils/js/constants';
+import {ImageContainer} from '../../app_utils/container_components/ImageContainer';
 
 const EpisodePageComponent = ({ episode, onLoadMore }) => {
   const {
@@ -21,7 +22,7 @@ const EpisodePageComponent = ({ episode, onLoadMore }) => {
   return (
     <EpisodeContainer>
       <ImgCard>
-        <img src={image} alt={title} />
+        <ImageContainer src={image} fallback={MISSING_IMG} alt={title} />
         <TitleContainer>
           <h1>Star Wars: Episode {numToRomanNum[episodeId]}</h1>
           <h2>{title}</h2>

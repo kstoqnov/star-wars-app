@@ -32,7 +32,7 @@ export const ImgCard = styled.div`
 
     img {
       display: block;
-      width: 100%;
+      max-width: 100%;
       height: auto;
       border-top-left-radius: 0.5em;
       border-top-right-radius: 0.5em;
@@ -56,11 +56,11 @@ export const TitleContainer = styled.div`
   h1 {
     font-family: 'SF Distant Galaxy Outline';
     color: ${({ theme }) => theme.headingFontColor};
-    font-size: 3.5vw;
+    font-size: 1.5vw;
   }
 
   h2 {
-    font-size: 2.8vw;
+    font-size: 0.8vw;
     font-weight: bold;
     color: ${({ theme }) => theme.titleFontColor};
   }

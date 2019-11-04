@@ -2,6 +2,7 @@ import React from 'react';
 import StarShipCardComponent from '../../app_starship_page_components/style_components/StarShipCardComponent';
 
 import { MISSING_IMG } from '../../app_utils/js/constants';
+import {ImageContainer} from '../../app_utils/container_components/ImageContainer';
 import { withRouter } from 'react-router-dom';
 import {
   CharDetailsWrapper,
@@ -18,11 +19,7 @@ const CharacterDetailsComponent = ({ person, history }) => {
       <CharDetailsContainer>
         <CharDetailsCard>
           <h2>{name}</h2>
-          {image ? (
-            <img src={image} alt={name} />
-          ) : (
-            <img src={MISSING_IMG} alt={name} />
-          )}
+          <ImageContainer src={image} fallback={MISSING_IMG} alt={name} />
           {height ? (
             <p>
               <span id="pointer">Height: </span>

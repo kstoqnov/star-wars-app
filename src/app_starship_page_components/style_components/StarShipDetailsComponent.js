@@ -1,6 +1,8 @@
 import React from 'react';
 
 import { ShipDetailsCard } from '../css/starship-details.css';
+import { MISSING_IMG } from '../../app_utils/js/constants';
+import {ImageContainer} from '../../app_utils/container_components/ImageContainer';
 
 const StarShipDetailsComponent = ({ starship }) => {
   const {
@@ -16,7 +18,7 @@ const StarShipDetailsComponent = ({ starship }) => {
   return (
     <ShipDetailsCard>
       <h2>{name}</h2>
-      <img src={image} alt={name} />
+      <ImageContainer src={image} fallback={MISSING_IMG} alt={name} />
       {starshipClass ? (
         <p>
           <span id="pointer">Class: </span>

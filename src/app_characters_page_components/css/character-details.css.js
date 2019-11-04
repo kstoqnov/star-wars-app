@@ -9,7 +9,7 @@ export const CharDetailsWrapper = styled.div`
     text-align: center;
     position: relative;
     padding-bottom: 0.8em;
-    font-size: 3vw;
+    font-size: 1.8vw;
 
     &:after {
       display: block;
