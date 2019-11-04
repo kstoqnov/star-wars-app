@@ -11,7 +11,7 @@ import StarShipPageContainerComponent from '../../app_starship_page_components/c
 import { GlobalStyles } from '../../app_utils/css/global.css';
 import {ProtectedRoute} from '../../app_utils/container_components/ProtectedRoute';
 import { ThemeProvider } from 'styled-components';
-import { useQuery } from 'react-apollo';
+import { useQuery } from '@apollo/react-hooks';
 import { lightTheme, darkTheme } from '../../app_utils/css/theme.css';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { GET_THEME } from '../../app_utils/js/getTheme';
@@ -31,7 +31,6 @@ const AppContainerComponent = () => {
 
       <GlobalStyles />
 
-      <>
       <Switch>
 
         <Route
@@ -76,8 +75,6 @@ const AppContainerComponent = () => {
         </ErrorBoundaryComponent>
 
       </Switch>
-
-      </>
 
     </ThemeProvider>
 

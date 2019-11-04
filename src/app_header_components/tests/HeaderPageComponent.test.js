@@ -1,14 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HeaderPageComponent from '../style_components/HeaderPageComponent';
+
+import { BrowserRouter} from 'react-router-dom';
+import { MockedProvider } from '@apollo/react-testing';
 
 it("renders without crashing", () => {
 
-
     const div = document.createElement('div');
-    ReactDOM.render(<HeaderPageComponent />, div);
+  
+    ReactDOM.render(
+        <MockedProvider  addTypename={false}>
+            <BrowserRouter>
+
+              RenderWithThemeForTest(HeaderPageComponent)
+               
+            </BrowserRouter>
+        </MockedProvider>
+    , div);
+   
     ReactDOM.unmountComponentAtNode(div);
-
-
 
 });

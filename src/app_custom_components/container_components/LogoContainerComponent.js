@@ -4,6 +4,7 @@ import LogoComponent from '../style_components/LogoComponent';
 import { useApolloClient, useQuery } from 'react-apollo';
 import { GET_THEME } from '../../app_utils/js/getTheme';
 
+
 const LogoContainerComponent = ({asTitle}) => {
   const {data: {theme}} = useQuery(GET_THEME);
   const client = useApolloClient();
