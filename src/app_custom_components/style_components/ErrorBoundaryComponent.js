@@ -11,24 +11,23 @@ class ErrorBoundaryComponent extends React.Component {
     super();
 
     this.state = {
-      hasErrored: false
+      hasError: false
     };
   }
 
   static getDerivedStateFromError(error) {
-    // process the error
-    return { hasErrored: true };
+      return { hasError: true };
   }
 
-  componentDidCatch(error, info) {
+  componentDidCatch(error) {
     console.log(error);
   }
 
   render() {
-    if (this.state.hasErrored) {
+    if (this.state.hasError) {
       return (
         <ErrorImageOverlay>
-          <ErrorImageContainer imageUrl='https://i.imgur.com/yW2W9SC.png' />
+          <ErrorImageContainer imageUrl='https://pixabay.com/illustrations/head-brain-man-face-human-607480/' />
           <ErrorImageText>Something went wrong.</ErrorImageText>
         </ErrorImageOverlay>
       );
