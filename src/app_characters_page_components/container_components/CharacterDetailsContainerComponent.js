@@ -7,6 +7,7 @@ import { GET_PERSON } from '../../app_utils/js/getPerson';
  
 
 const CharacterDetailsContainerComponent = ({ match }) => {
+
   const { data, loading, error } = useQuery(GET_PERSON, {
     variables: { id: match.params.characterId },
   });
@@ -15,6 +16,7 @@ const CharacterDetailsContainerComponent = ({ match }) => {
   if (error) return `Error! ${error}`;
 
   return <CharacterDetailsComponent person={data.person} />;
+  
 };
 
 export default CharacterDetailsContainerComponent;
