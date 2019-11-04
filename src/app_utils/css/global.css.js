@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     src: url(${SFDistantGalaxy}) format('truetype');
   }
 
+
   *,
   *::after,
   *::before {

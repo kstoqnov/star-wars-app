@@ -7,4 +7,4 @@ export const typeDefs = gql`
   }
 `;
 
-export const resolvers = {};
+

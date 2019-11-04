@@ -9,7 +9,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 import { ApolloClient } from 'apollo-boost';
 import { setContext } from 'apollo-link-context';
 import { AUTH_TOKEN, THEME } from './app_utils/js/constants';
-import { typeDefs, resolvers } from './app_resolvers/resolvers';
+import { typeDefs} from './app_type_definitions/typeDefs';
 
 const apiLink = createHttpLink({
   uri: 'http://softuni-swapp-212366186.eu-west-1.elb.amazonaws.com/graphql'
@@ -30,8 +30,7 @@ const cache = new InMemoryCache();
 const client = new ApolloClient({
   link: authLink.concat(apiLink),
   cache,
-  typeDefs,
-  resolvers
+  typeDefs
 });
 
 
