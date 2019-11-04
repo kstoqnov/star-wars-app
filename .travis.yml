@@ -1,4 +1,5 @@
 before_deploy:
+  - npm run test
   - npm run build
   - tar czvf build.tar.gz -C build
 deploy:
