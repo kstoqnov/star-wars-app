@@ -1,13 +1,10 @@
-before_deploy:
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+script:
+  - npm test
   - npm run build
-  - tar czvf build.tar.gz -C build
-deploy:
-  - provider: releases
-    skip_cleanup: true # Don't re-run the tests
-    github_token: $827eadc1562ada428fe09198109b732d2d261c43
-    file: "./build.tar.gz"
-    skip_cleanup: true
-    on:
-      tags: true
-      branch: master
    
