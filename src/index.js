@@ -30,7 +30,16 @@ const cache = new InMemoryCache();
 const client = new ApolloClient({
   link: authLink.concat(apiLink),
   cache,
-  typeDefs
+  typeDefs,
+  onError: ({ networkError, graphQLErrors }) => {
+
+    console.log('graphQLErrors', graphQLErrors)
+    console.log('networkError', networkError)
+
+    localStorage.clear();
+    window.location.href = '/login';
+
+  }
 });
 
 
