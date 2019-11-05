@@ -11,9 +11,8 @@ import { setContext } from 'apollo-link-context';
 import { THEME } from './app_utils/js/constants';
 import { typeDefs} from './app_type_definitions/typeDefs';
 
-
 const apiLink = createHttpLink({
-  uri: "http://softuni-swapp-212366186.eu-west-1.elb.amazonaws.com/graphql"
+  uri: process.env.REACT_APP_API_URL
 });
 
 const authLink = setContext((_, { headers }) => {
