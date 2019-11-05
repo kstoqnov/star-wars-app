@@ -7,9 +7,6 @@ cache:
 script:
 - npm test
 - npm run build
-- if [ "$TRAVIS_PULL_REQUEST" == true ]; then bash ./travis/run_on_pull_requests; fi
-
-# safelist
 branches:
   only:
   - master
