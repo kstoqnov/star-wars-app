@@ -3,8 +3,3 @@ base = "/"
 publish = "/build/"
 command = "npm run build"
 
-[[redirects]]
-  from = "/*"
-  to = "/episodes"
-  status = 200
-  force = true
