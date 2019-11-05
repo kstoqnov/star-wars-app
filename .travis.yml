@@ -6,15 +6,10 @@ cache:
     - node_modules
 script:
     - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && npm test || npm run build'
-# blocklist
-branches:
-  except:
-  - legacy
-  - experimental
 
 # safelist
 branches:
   only:
   - master
-  - stable
+  
    
