@@ -5,9 +5,9 @@ cache:
   directories:
     - node_modules
 script:
-- npm test
-- npm run build
-#- if [ "$TRAVIS_PULL_REQUEST" == true ]; then bash ./travis/run_on_pull_requests; fi
+#- npm test
+#- npm run build
+- if [ "$TRAVIS_PULL_REQUEST" == true ]; then - npm test ; fi
 
 # safelist
 branches:
