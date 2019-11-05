@@ -4,7 +4,6 @@ import SpinnerComponent from '../../app_custom_components/style_components/Spinn
 
 import { useMutation, useApolloClient } from 'react-apollo';
 import { withRouter } from 'react-router-dom';
-import { AUTH_TOKEN } from '../../app_utils/js/constants';
 import { SIGN_IN_MUTATION } from '../../app_utils/js/signInMutation';
 
 const LoginContainerComponent = ({ history }) => {
@@ -23,7 +22,7 @@ const LoginContainerComponent = ({ history }) => {
   };
 
   const saveUserData = token => {
-    localStorage.setItem(AUTH_TOKEN, token);
+    localStorage.setItem(process.env.REACT_APP_API_KEY, token);
   };
 
   if (loading) return <SpinnerComponent/>;

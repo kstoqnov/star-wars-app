@@ -24,11 +24,11 @@ const AppContainerComponent = () => {
   const { data } = useQuery(IS_LOGGED_IN);
   const {data: {theme}} = useQuery(GET_THEME);
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
-
+  
   return (
-
+     
     <ThemeProvider theme={themeMode}>
-
+     
       <GlobalStyles />
 
       <Switch>

@@ -54,8 +54,10 @@ class LoginPageComponent extends React.Component {
             <CustomButtonComponent type="submit" id='form-button'> Login </CustomButtonComponent>
           </form>
         </FormContainer>
+        
         <p><span>Email: </span>demo@st6.io</p>
         <p><span>Password: </span>demo1234</p>
+        
       </SignInContainer>
     );
   }

@@ -1,13 +1,12 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import { AUTH_TOKEN } from '../js/constants';
 
 export const ProtectedRoute = ({ component: Component, ...rest }) => {
   return (
     <Route
       {...rest}
       render={props => {
-        if (localStorage.getItem(AUTH_TOKEN)) {
+        if (localStorage.getItem(process.env.REACT_APP_API_KEY)) {
           return <Component {...props} />;
         } else {
           return (
