@@ -4,7 +4,7 @@ export const ErrorMessage = styled.div`
   color: red;
 `;
 
-export const SignInContainer = styled.div`
+export const SignInContainer = styled.main`
   display: flex;
   flex-direction: column;
   width: 40%;

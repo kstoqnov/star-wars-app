@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ReactComponent as LogOut } from '../../img/logOut.svg';
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   height: 90px;
   width: 100%;
   display: flex;
@@ -53,7 +53,6 @@ export const OptionLink = styled(Link)`
 `;
 
 export const LogoWrapper = styled.div`
-  padding: 8px;
   border-radius: 3px;
   border: 1px solid #4BD5EE;
   background: ${({theme}) => theme.cardBackground};
@@ -65,7 +64,7 @@ export const LogoWrapper = styled.div`
 
 export const LogoutStyle = styled(LogOut)`
   fill: #4bd5ee;
-  width: 25px;
-  height: 25px;
-  padding-top: 5px;
+  width: 54px;
+  height: 42px;
+  vertical-align: sub;
 `;

@@ -54,5 +54,6 @@ export const CardMeta = styled.span`
 
 export const Title = styled.h1`
   color: ${({ theme }) => theme.headingFontColor};
+  text-align: center;
 `;
 export const Description = styled.p``;

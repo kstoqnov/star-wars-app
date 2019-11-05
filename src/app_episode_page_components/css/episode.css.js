@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const EpisodeContainer = styled.div`
+export const EpisodeContainer = styled.main`
   margin: 2em 8em;
 
   @media screen and (max-width: 800px) {
@@ -56,11 +56,12 @@ export const TitleContainer = styled.div`
   h1 {
     font-family: 'SF Distant Galaxy Outline';
     color: ${({ theme }) => theme.headingFontColor};
-    font-size: 1.5vw;
+    font-size: 3.5vw;
+    
   }
 
   h2 {
-    font-size: 0.8vw;
+    font-size: 1.8vw;
     font-weight: bold;
     color: ${({ theme }) => theme.titleFontColor};
   }

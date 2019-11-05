@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ShipDetailsWrapper = styled.div`
+export const ShipDetailsWrapper = styled.main`
   margin: 1em 10em;
   
   h1,
