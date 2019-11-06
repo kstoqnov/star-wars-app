@@ -12,13 +12,13 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
-        run: npm install
+    - run: npm install
     - name: tests
-        run: npm test
+    - run: npm run test
     - name: Deploy 
     - run: |
         curl -X POST -d {} https://api.netlify.com/build_hooks/5dc31ee5d5d82c01858521f7
