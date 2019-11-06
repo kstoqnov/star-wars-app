@@ -15,13 +15,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    -  name: add to net
+      steps:
+      - name: Curl request
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/5dc31ee5d5d82c01858521f7
     - name: Install Packages
       run: npm install
     - name: Deploy 
       run: |
         npm run deploy
-    - name: deploy to netlifly
-      runs-on: ubuntu-latest
-    steps:
-      - name: Curl request
-        run: curl -X POST -d {} https://api.netlify.com/build_hooks/5dc31ee5d5d82c01858521f7
+    
