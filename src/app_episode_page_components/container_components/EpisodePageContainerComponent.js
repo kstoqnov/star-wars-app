@@ -8,7 +8,7 @@ import { useQuery } from '@apollo/react-hooks';
 
 
 
-const GET_EPISODE = loader('../../app_utils/js/getEpisode.gql');
+const GET_EPISODE = loader('../../app_graphql_schemas/getEpisode.gql');
 
 const EpisodePageContainerComponent = ({ match }) => {
 

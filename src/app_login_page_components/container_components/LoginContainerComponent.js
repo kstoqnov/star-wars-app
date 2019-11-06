@@ -8,7 +8,7 @@ import { withRouter } from 'react-router-dom';
 
 
 
-const SIGN_IN_MUTATION = loader('../../app_utils/js/signInMutation.gql');
+const SIGN_IN_MUTATION = loader('../../app_graphql_schemas/signInMutation.gql');
 
 const LoginContainerComponent = ({ history }) => {
 

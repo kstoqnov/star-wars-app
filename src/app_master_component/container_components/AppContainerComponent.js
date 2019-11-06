@@ -17,8 +17,8 @@ import { lightTheme, darkTheme } from '../../app_utils/css/theme.css';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 
-const IS_LOGGED_IN = loader('../../app_utils/js/isLoggedIn.gql');
-const GET_THEME = loader('../../app_utils/js/getTheme.gql');
+const IS_LOGGED_IN = loader('../../app_graphql_schemas/isLoggedIn.gql');
+const GET_THEME = loader('../../app_graphql_schemas/getTheme.gql');
 
 const AppContainerComponent = () => {
 

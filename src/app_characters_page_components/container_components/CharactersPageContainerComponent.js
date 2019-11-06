@@ -8,7 +8,7 @@ import { useQuery } from 'react-apollo';
  
 
 
-const GET_ALL_PEOPLE = loader('../../app_utils/js/getAllPeople.gql');
+const GET_ALL_PEOPLE = loader('../../app_graphql_schemas/getAllPeople.gql');
 
 const CharactersPageContainerComponent = () => {
 

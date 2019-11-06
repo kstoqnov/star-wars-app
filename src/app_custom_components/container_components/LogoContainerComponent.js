@@ -5,7 +5,7 @@ import { loader } from 'graphql.macro';
 import { useApolloClient, useQuery } from 'react-apollo';
 
 
-const GET_THEME = loader('../../app_utils/js/getTheme.gql');
+const GET_THEME = loader('../../app_graphql_schemas/getTheme.gql');
 
 const LogoContainerComponent = ({asTitle}) => {
   const {data: {theme}} = useQuery(GET_THEME);

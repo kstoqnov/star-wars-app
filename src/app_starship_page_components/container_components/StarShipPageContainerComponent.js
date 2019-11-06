@@ -8,7 +8,7 @@ import { ALL_STAR_SHIPS } from '../../app_utils/js/constants';
 import { useQuery } from 'react-apollo';
  
 
-const GET_STAR_SHIPS = loader('../../app_utils/js/getStarShips.gql');
+const GET_STAR_SHIPS = loader('../../app_graphql_schemas/getStarShips.gql');
 
 
 const StarShipPageContainerComponent = ({ match }) => {

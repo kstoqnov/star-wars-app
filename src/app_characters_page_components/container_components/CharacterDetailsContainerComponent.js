@@ -6,7 +6,7 @@ import { loader } from 'graphql.macro';
 import { useQuery } from 'react-apollo';
  
 
-const GET_PERSON = loader('../../app_utils/js/getPerson.gql');
+const GET_PERSON = loader('../../app_graphql_schemas/getPerson.gql');
 
 
 const CharacterDetailsContainerComponent = ({ match }) => {
