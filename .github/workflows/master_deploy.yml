@@ -19,7 +19,7 @@ jobs:
       run: npm install
     - name: build Packages
       run: npm run build --if-present
-    - name:
+    - name: test Packages
       run: npm test     
     - name: Deploy 
       run: |
