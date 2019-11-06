@@ -33,6 +33,7 @@
     "start": "react-scripts start",
     "deploy": "node --version",
     "build": "react-scripts build",
+    "test:git": "react-scripts test",
     "test": "set CI=true && react-scripts test --coverage",
     "test:coverage": "set CI=true && react-scripts test --coverage",
     "eject": "react-scripts eject"
