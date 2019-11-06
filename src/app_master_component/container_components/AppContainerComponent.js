@@ -15,7 +15,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { lightTheme, darkTheme } from '../../app_utils/css/theme.css';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { GET_THEME } from '../../app_utils/js/getTheme';
-import {IS_LOGGED_IN} from '../../app_utils/js/isLoggedIn';
+import { IS_LOGGED_IN } from '../../app_utils/js/isLoggedIn';
 
 
 
@@ -40,7 +40,7 @@ const AppContainerComponent = () => {
             data.isLoggedIn ? <Redirect to="/episodes" /> : <LoginContainerComponent />
           }
         />
-
+          
         <ErrorBoundaryComponent>
 
           <HeaderPageComponent />
