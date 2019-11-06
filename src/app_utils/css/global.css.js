@@ -22,7 +22,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     margin: 0;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", serif;
     
   }
 
