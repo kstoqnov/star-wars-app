@@ -9,7 +9,7 @@ import CharacterDetailsContainerComponent from '../../app_characters_page_compon
 import StarShipPageContainerComponent from '../../app_starship_page_components/container_components/StarShipPageContainerComponent';
 
 import { GlobalStyles } from '../../app_utils/css/global.css';
-import {ProtectedRoute} from '../../app_utils/container_components/ProtectedRoute';
+import { ProtectedRoute } from '../../app_utils/container_components/ProtectedRoute';
 import { ThemeProvider } from 'styled-components';
 import { useQuery } from '@apollo/react-hooks';
 import { lightTheme, darkTheme } from '../../app_utils/css/theme.css';
@@ -22,7 +22,7 @@ import { IS_LOGGED_IN } from '../../app_utils/js/isLoggedIn';
 const AppContainerComponent = () => {
 
   const { data } = useQuery(IS_LOGGED_IN);
-  const {data: {theme}} = useQuery(GET_THEME);
+  const { data: {theme} } = useQuery(GET_THEME);
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
   
   return (
@@ -35,8 +35,8 @@ const AppContainerComponent = () => {
 
         <Route
           exact
-          path={['/', '/login']}
-          render={() =>
+          path={ ['/', '/login'] }
+          render={ () =>
             data.isLoggedIn ? <Redirect to="/episodes" /> : <LoginContainerComponent />
           }
         />
