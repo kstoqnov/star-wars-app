@@ -31,6 +31,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "node --version",
     "build": "react-scripts build",
     "test": "set CI=true && react-scripts test --coverage",
     "test:coverage": "set CI=true && react-scripts test --coverage",
