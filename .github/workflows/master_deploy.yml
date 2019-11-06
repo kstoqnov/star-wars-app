@@ -19,7 +19,7 @@ jobs:
       run: npm install
     - name: Deploy to GH Pages
       run: |
-        git config --global user.email "your_github_email>"
-        git config --global user.name "your_github_username>"
+        git config --global user.email "kirilstoqnov@gmail.com>"
+        git config --global user.name "kstoqnov>"
         git remote set-url origin https://4857dd85954c3fb14301b5a35cc06d82fc27dc92>@github.com/kstoqnov>/star-wars-app>.git
         npm run deploy
