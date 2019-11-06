@@ -15,12 +15,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install and test Packages
-    - run: | 
-          npm install
-          npm run test
+    - name: Install Packages
+      run: npm install
     - name: Deploy 
-    - run: |
+      run: |
         curl -X POST -d {} https://api.netlify.com/build_hooks/5dc31ee5d5d82c01858521f7
         npm run deploy
   
