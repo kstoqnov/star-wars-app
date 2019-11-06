@@ -16,11 +16,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
-      run: npm install
-    - name: run tests
-      run: npm test
+    - run:  npm install
+    - name: tests
+    - run: npm run test
     - name: Deploy 
-      run: |
+    - run: |
         curl -X POST -d {} https://api.netlify.com/build_hooks/5dc31ee5d5d82c01858521f7
         npm run deploy
   
