@@ -8,16 +8,17 @@ import CharactersPageContainerComponent from '../../app_characters_page_componen
 import CharacterDetailsContainerComponent from '../../app_characters_page_components/container_components/CharacterDetailsContainerComponent';
 import StarShipPageContainerComponent from '../../app_starship_page_components/container_components/StarShipPageContainerComponent';
 
+import { loader } from 'graphql.macro';
 import { GlobalStyles } from '../../app_utils/css/global.css';
 import { ProtectedRoute } from '../../app_utils/container_components/ProtectedRoute';
 import { ThemeProvider } from 'styled-components';
 import { useQuery } from '@apollo/react-hooks';
 import { lightTheme, darkTheme } from '../../app_utils/css/theme.css';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import { GET_THEME } from '../../app_utils/js/getTheme';
-import { IS_LOGGED_IN } from '../../app_utils/js/isLoggedIn';
 
 
+const IS_LOGGED_IN = loader('../../app_utils/js/isLoggedIn.gql');
+const GET_THEME = loader('../../app_utils/js/getTheme.gql');
 
 const AppContainerComponent = () => {
 

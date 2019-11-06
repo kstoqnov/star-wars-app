@@ -2,9 +2,13 @@ import React from 'react';
 import LoginPageComponent from '../style_components/LoginPageComponent';
 import SpinnerComponent from '../../app_custom_components/style_components/SpinnerComponent';
 
+import { loader } from "graphql.macro";
 import { useMutation, useApolloClient } from 'react-apollo';
 import { withRouter } from 'react-router-dom';
-import { SIGN_IN_MUTATION } from '../../app_utils/js/signInMutation';
+
+
+
+const SIGN_IN_MUTATION = loader('../../app_utils/js/signInMutation.gql');
 
 const LoginContainerComponent = ({ history }) => {
 

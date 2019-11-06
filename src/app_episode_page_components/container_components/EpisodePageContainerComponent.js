@@ -2,11 +2,16 @@ import React from 'react';
 import EpisodePageComponent from '../style_components/EpisodePageComponent';
 import SpinnerComponent from '../../app_custom_components/style_components/SpinnerComponent';
 
+import { loader } from 'graphql.macro';
 import { FIVE_CHARACTERS } from '../../app_utils/js/constants';
 import { useQuery } from '@apollo/react-hooks';
-import { GET_EPISODE } from '../../app_utils/js/getEpisode';
+
+
+
+const GET_EPISODE = loader('../../app_utils/js/getEpisode.gql');
 
 const EpisodePageContainerComponent = ({ match }) => {
+
   const { loading, error, data, fetchMore } = useQuery(GET_EPISODE, {
     variables: { id: match.params.episodeId, first: FIVE_CHARACTERS },
   });

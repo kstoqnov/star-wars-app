@@ -1,0 +1,18 @@
+query AllPeople($first: Int!, $cursor: String) {
+  allPeople(first: $first, after: $cursor) {
+    edges {
+      node {
+        id
+        name
+        image
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
+
+
+

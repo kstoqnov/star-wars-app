@@ -2,12 +2,17 @@ import React from 'react';
 import CharactersPageComponent from '../style_components/CharactersPageComponent';
 import SpinnerComponent from '../../app_custom_components/style_components/SpinnerComponent';
 
+import { loader } from 'graphql.macro';
 import { TWELVE_CHARACTERS } from '../../app_utils/js/constants';
 import { useQuery } from 'react-apollo';
-import { GET_ALL_CHARACTERS } from '../../app_utils/js/getAllCharacters';
  
+
+
+const GET_ALL_PEOPLE = loader('../../app_utils/js/getAllPeople.gql');
+
 const CharactersPageContainerComponent = () => {
-  const { data, loading, error, fetchMore } = useQuery(GET_ALL_CHARACTERS, {
+
+  const { data, loading, error, fetchMore } = useQuery(GET_ALL_PEOPLE, {
     variables: { first: TWELVE_CHARACTERS },
   });
 

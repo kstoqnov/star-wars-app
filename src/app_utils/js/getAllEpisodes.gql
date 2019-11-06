@@ -1,0 +1,13 @@
+query allEpisodes($first: Int!) {
+  allEpisodes(first: $first) {
+    edges {
+      node {
+        id
+        title
+        episodeId
+        openingCrawl
+        image
+      }
+    }
+  }
+}
