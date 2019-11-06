@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ReactComponent as LogOutImage } from '../../app_images/logOut.svg';
 
+
+
 export const HeaderContainer = styled.header`
   height: 90px;
   width: 100%;
@@ -62,6 +64,7 @@ export const LogoWrapper = styled.div`
     margin-right: 5px;
   }
 `;
+
 
 export const LogoutStyle = styled(LogOutImage)`
   fill: #4bd5ee;
