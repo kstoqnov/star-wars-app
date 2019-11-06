@@ -20,7 +20,7 @@ jobs:
     - name: build Packages
       run: npm run build --if-present
     - name: test Packages
-      run: npm test     
+      run: npm test --watchAll=false   
     - name: Deploy 
       run: |
         curl -X POST -d {} https://api.netlify.com/build_hooks/5dc31ee5d5d82c01858521f7
