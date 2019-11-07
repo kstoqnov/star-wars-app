@@ -2,7 +2,7 @@ import React from 'react';
 import LogoComponent from '../style_components/LogoComponent';
 
 import { loader } from 'graphql.macro';
-import { useApolloClient, useQuery } from 'react-apollo';
+import { useApolloClient, useQuery } from '@apollo/react-hooks';
 
 
 const GET_THEME = loader('../../app_graphql_schemas/getTheme.gql');

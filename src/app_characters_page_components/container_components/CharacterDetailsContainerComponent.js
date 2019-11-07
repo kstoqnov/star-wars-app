@@ -3,7 +3,7 @@ import CharacterDetailsComponent from '../style_components/CharacterDetailsCompo
 import SpinnerComponent from '../../app_custom_components/style_components/SpinnerComponent';
 
 import { loader } from 'graphql.macro';
-import { useQuery } from 'react-apollo';
+import { useQuery } from '@apollo/react-hooks';
  
 
 const GET_PERSON = loader('../../app_graphql_schemas/getPerson.gql');

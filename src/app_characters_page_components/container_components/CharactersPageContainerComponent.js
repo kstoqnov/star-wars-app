@@ -4,7 +4,7 @@ import SpinnerComponent from '../../app_custom_components/style_components/Spinn
 
 import { loader } from 'graphql.macro';
 import { TWELVE_CHARACTERS } from '../../app_utils/js/constants';
-import { useQuery } from 'react-apollo';
+import { useQuery } from '@apollo/react-hooks';
  
 
 

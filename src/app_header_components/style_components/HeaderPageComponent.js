@@ -2,7 +2,7 @@ import React from 'react';
 import LogoContainerComponent from '../../app_custom_components/container_components/LogoContainerComponent';
 
 import { withRouter } from 'react-router-dom';
-import { useApolloClient } from 'react-apollo';
+import { useApolloClient } from '@apollo/react-hooks';
 import {
   HeaderContainer,
   OptionsContainer,

@@ -3,7 +3,7 @@ import LoginPageComponent from '../style_components/LoginPageComponent';
 import SpinnerComponent from '../../app_custom_components/style_components/SpinnerComponent';
 
 import { loader } from "graphql.macro";
-import { useMutation, useApolloClient } from 'react-apollo';
+import { useMutation, useApolloClient } from '@apollo/react-hooks';
 import { withRouter } from 'react-router-dom';
 
 

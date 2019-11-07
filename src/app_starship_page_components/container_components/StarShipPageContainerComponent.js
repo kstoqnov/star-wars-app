@@ -5,7 +5,7 @@ import SpinnerComponent from '../../app_custom_components/style_components/Spinn
 import { loader } from 'graphql.macro';
 import { CalculateRadarStats } from './CalculateRadarStats';
 import { ALL_STAR_SHIPS } from '../../app_utils/js/constants';
-import { useQuery } from 'react-apollo';
+import { useQuery } from '@apollo/react-hooks';
  
 
 const GET_STAR_SHIPS = loader('../../app_graphql_schemas/getStarShips.gql');
