@@ -1,4 +1,47 @@
+# Project Info
+
+React Web Application that explores some interesting Star Wars data.
+Open-source React Web Application that retrieves Star Wars data from GraphQL server.
+
+## Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Technology Tree
+
+### Apollo-client
+
+        https://www.apollographql.com/docs/intro/platform/
+
+### Graphql
+
+        https://graphql.org/
+
+### Jest
+
+        https://jestjs.io/
+
+### Travis 
+
+        https://travis-ci.org/
+
+###  Netlify
+
+        https://www.netlify.com/
+
+### React Router
+        
+        https://reacttraining.com/react-router/web/guides/quick-start
+
+### React Svg Radar Chart
+        
+        https://github.com/Spyna/react-svg-radar-chart
+        
+
+### Styled Components
+
+        https://www.styled-components.com/
+
 
 ## Available Scripts
 
@@ -35,34 +78,4 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.        

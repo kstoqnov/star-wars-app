@@ -9,7 +9,6 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 import { ApolloClient } from 'apollo-boost';
 import { setContext } from 'apollo-link-context';
 import { THEME } from './app_utils/js/constants';
-import { typeDefs } from './app_type_definitions/typeDefs';
 import { defaultOptions } from './app_utils/js/defaultOptionsApolloClient';
 
 const apiLink = createHttpLink({

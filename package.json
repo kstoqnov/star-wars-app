@@ -36,6 +36,8 @@
     "test": "set CI=true && react-scripts test --coverage",
     "test:coverage": "set CI=true && react-scripts test --coverage",
     "test-workflow": "set CI=true && react-scripts test --coverage --watchAll=false",
+    "format": "prettier-eslint —eslint-config-path ./.eslintrc.js --write '**/*.js’",
+    "lint": "eslint . —ext .js",
     "eject": "react-scripts eject"
   },
   "husky": {
@@ -70,6 +72,9 @@
     "dotenv": "^8.2.0",
     "husky": "^3.0.9",
     "jest": "^24.9.0",
-    "lint-staged": "^9.4.2"
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2",
+    "prettier-eslint": "^9.0.0",
+    "prettier-eslint-cli": "^5.0.0"
   }
 }
