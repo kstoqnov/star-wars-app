@@ -22,7 +22,7 @@ const GET_THEME = loader('../../app_graphql_schemas/getTheme.gql');
 
 const AppContainerComponent = () => {
 
-  const { data } = useQuery(IS_LOGGED_IN);
+  const { loading, error, data } = useQuery(IS_LOGGED_IN);
   const { data: {theme} } = useQuery(GET_THEME);
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
   
