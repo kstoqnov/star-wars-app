@@ -31,7 +31,6 @@ const cache = new InMemoryCache();
 const client = new ApolloClient({
   link: authLink.concat(apiLink),
   cache,
-  typeDefs,
   name: 'react-web-client',
   version: '1.3',
   queryDeduplication: false,
